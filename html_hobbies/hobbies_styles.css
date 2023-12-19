@@ -1,0 +1,137 @@
+/*
+   CSA 340 Webpage Development
+   Website Project
+   
+   Hobbies Page Style Sheet
+   Author: Daniel Kane
+   Date: 12-19-23
+   
+   Filename: hobbies_styles.css
+*/
+
+/* Structural Styles */
+
+html {
+	background-color: black;
+}
+
+body {
+	height: 100vh;
+}
+
+.container {
+	font: italic 2.3rem "Bauhaus 93", serif;
+	width: 100%;
+	height: 400px;
+	background-position: center;
+	background-size: cover;
+	background-image: url("hobbies_logo.jpg");
+	background-attachment: fixed;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+body > p {
+	font-size: 1.3em;
+	text-align: center;
+}
+
+/* Section Styles */
+
+section.hobbies {
+	width: 45%;
+	margin: 50px auto;
+	padding: 50px;
+	background-color: hsl(30, 100%, 35%);
+}
+
+section.hobbies > h1 {
+	text-align: center;
+}
+
+section.hobbies > p {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1.2em;
+}
+
+section.hobbies > ul > li > a:link, section.hobbies > ul > li > a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+section.hobbies > ul > li > a:hover, section.hobbies > ul > li > a:active {
+	color: hsla(0, 0%, 100%, 0.7);
+	text-decoration: underline; 
+}
+
+#hobby1 {
+	height: 600px;
+}
+
+#hobby2 {
+	height: 650px;
+}
+
+#hobby3, #hobby4 {
+	height: 550px;
+}
+
+#hobby5 {
+	height: 450px;
+}
+
+/* Navigation Styles */
+
+nav {
+	display: table;
+	width: 100%;
+}
+
+nav > ul {
+	display: table-row;
+}
+
+nav > ul > li {
+	display: table-cell;
+	text-align: center;
+}
+
+nav > ul > li > a {
+	display: block;
+	font: "Times New Roman", serif;
+	font-size: 1.3em;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+nav > ul > li > a:link, nav > ul > li > a:visited {
+	text-decoration: none;
+	background-color: hsla(0, 0%, 42%, 0.4);
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+	color: hsla(0, 0%, 100%, 0.7);
+	text-decoration: underline; 
+	background-color: hsla(0, 0%, 42%, 0.7);
+}
+
+/* Footer Styles */
+
+footer > h1 {
+	text-align: center;
+}
+
+/* Wide-Use Color Style */
+
+.container, body > p, section.hobbies > div > h1, section.hobbies > p, nav > ul > li > a:link, nav > ul > li > a:visited, footer > h1 {
+	color: hsl(30, 100%, 50%);
+}
